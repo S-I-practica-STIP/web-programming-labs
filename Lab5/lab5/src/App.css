@@ -1,0 +1,29 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-bottom: 1px solid #444;
+}
+
+.todo-item span {
+  flex: 1;
+  text-align: left;
+}
+
+.completed span {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+}
