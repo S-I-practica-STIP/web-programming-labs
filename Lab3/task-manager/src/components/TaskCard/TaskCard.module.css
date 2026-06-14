@@ -1,0 +1,80 @@
+/*базова картка*/
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    /*налаштування для лівої кольорової рамки */
+    border-left-width: 8px;
+    border-left-style: solid;
+    border-left-color: #ccc; 
+}
+
+
+/*кольорові ліві рамки для пріоритетів */
+.cardLow { border-left-color: #28a745; }
+.cardMedium { border-left-color: #ffc107; }
+.cardHigh { border-left-color: #dc3545; }
+
+
+/*стиль заголовка */
+.title 
+{
+    margin: 0 0 8px 0;
+    font-size: 1.25rem;
+    color: #1f2328;
+    font-weight: 600;
+}
+
+
+/*опис задачі */
+.description 
+{
+    margin: 0 0 12px 0;
+    color: #57606a;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+
+/*рядок з датою та пріоритетом */
+.meta 
+{
+    display: flex;
+    gap: 16px;
+    font-size: 0.85rem;
+    color: #6e7781;
+    margin-bottom: 16px;
+}
+
+
+/*рядок із кнопкою та випадаючим списокм */
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f0f2f5;
+    padding-top: 12px;
+}
+
+
+/*стилізація випадаючого списку*/
+.actions select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #d0d7de;
+    background-color: #f6f8fa;
+}
+
+
+/*Стиль кнопки видалення*/
+.deleteBtn {
+    background-color: #cf222e;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+}
