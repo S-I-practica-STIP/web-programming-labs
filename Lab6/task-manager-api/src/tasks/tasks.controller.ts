@@ -1,4 +1,4 @@
-import {
+﻿import {
   Controller,
   Get,
   Post,
@@ -9,7 +9,6 @@ import {
 } from "@nestjs/common";
 import * as taskEntity from "./entities/task.entity";
 import { CreateTaskDto } from "./dto/create-task.dto";
-
 
 @Controller("tasks")
 export class TasksController {
@@ -40,7 +39,6 @@ export class TasksController {
     }
   ];
 
-
   // GET /tasks
   // Повертає весь масив задач
   @Get()
@@ -49,7 +47,6 @@ export class TasksController {
     // TODO: повернути масив tasks
     return this.tasks; 
   }
-
 
   // GET /tasks/search?status=pending
   // Якщо параметр status не передано — повертає всі задачі
@@ -61,7 +58,6 @@ export class TasksController {
     if(!status) { return this.tasks; }
     return this.tasks.filter(task => task.status === status); 
   }
-
 
   // GET /tasks/:id
   // Якщо задачу не знайдено — повернути об'єкт { message: '...' }
@@ -75,7 +71,6 @@ export class TasksController {
     } 
     return foundTask; 
   }
-
 
   // POST /tasks
   // Створює нову задачу зі статусом 'pending' та поточним часом
@@ -96,7 +91,6 @@ export class TasksController {
     this.tasks.push(newTask);
     return newTask;
   }
-
 
   // DELETE /tasks/:id
   // Якщо задачу не знайдено — повернути об'єкт { message: '...' }
